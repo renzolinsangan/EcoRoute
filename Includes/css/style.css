@@ -1,0 +1,85 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow-anchor: none;
+}
+
+body {
+    background-image: url('../Images/login-background.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    min-height: 100vh;
+    overflow-anchor: none;
+}
+
+.login-form-row {
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(10, 25, 49, 0.3);
+    width: 100%;
+}
+
+.login-form-col-left {
+    color: white;
+}
+
+.login-form-col-left-text-container-top p, .login-form-col-left-text-container-bottom p {
+    padding: 0;
+    margin: 0;
+}
+
+.signup-button {
+    border-radius: 50px !important;
+    background-color: #FF9616 !important;
+    color: white !important;
+    border: none !important;
+    width: 250px !important;
+    font-weight: bold !important;
+    font-size: 20px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+
+.login-button {
+    border-radius: 50px !important;
+    background-color: #FF9616 !important;
+    color: white !important;
+    border: none !important;
+    font-weight: bold !important;
+    font-size: 20px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+
+.login-form-card {
+    background-color: #F6FAFD; 
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(10, 25, 49, 0.3);
+}
+
+.login-icon-container img, .login-icon-container h1 {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.login-icon {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+}
+
+i, .forgot-password-text {
+    color: #032F04;
+}
+
+.forgot-password-text {
+    text-decoration: underline;
+}

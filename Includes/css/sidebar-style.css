@@ -1,0 +1,27 @@
+.sidebar {
+    box-shadow: 0 4px 12px rgba(10, 25, 49, 0.15) !important;
+    height: 100vh !important;
+}
+
+#sideBarIcon {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+}
+
+.nav-link {
+    color: #011901;
+    border-radius: 0.5rem;
+}
+
+.nav-link:hover {
+    background-color: #FF9616;
+    color: white;
+}
+
+.nav-link.active {
+    background-color: #FF9616 !important;
+    color: white !important;
+}
