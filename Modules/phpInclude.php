@@ -1,5 +1,6 @@
 <?php
 session_start();
+date_default_timezone_set('Asia/Manila');
 $rootPath = $_SERVER['DOCUMENT_ROOT'] . "/EcoRoute/";
 include($rootPath . 'Includes/php/dbConnection.php');
 

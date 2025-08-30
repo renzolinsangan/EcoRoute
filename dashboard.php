@@ -29,11 +29,30 @@ include('Includes/php/dashboard/dashboardModule.php');
                     </div>
                 </div>
             </div>
-            <div class="dashboard-text-container row mb-4">
+            <div class="dashboard-text-container row">
                 <div class="col-12">
-                    <div class="dashboard-text-container-card card ps-4 pt-3 pb-3">
-                        <h1 class="dashboard-text-title">Hello, ADMIN!</h1>
+                    <!-- <div class="dashboard-text-container-card card ps-4 pt-3 pb-3"> -->
+                        <h1 class="dashboard-text-title fw-bold">Hello, ADMIN!</h1>
                         <p class="text-body-secondary">Manage user accounts and track sustainability within Tagaytay City.</p>
+                    <!-- </div> -->
+                </div>
+            </div>
+            <hr class="mb-5"> <!-- HORIZONTAL LINE -->
+            <div class="dashboard-data-container row">
+                <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<< DATA CARDS <<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
+                <?php echo cardBuilder('bi bi-people', 'Travelers in EcoRoute', '50'); ?>
+                <?php echo cardBuilder('bi bi-tree', 'Tourist Spots & Establishments in EcoRoute', '30'); ?>
+                <?php echo cardBuilder('bi bi-buildings', 'Sustainability Recognized', '30'); ?>
+                <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<< DATA CARDS <<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
+            </div>
+            <hr class="mb-5 mt-5"> <!-- HORIZONTAL LINE -->
+            <div class="dashboard-map-container row">
+                <div class="col-12">
+                    <div class="dashboard-map-container-card card">
+                        <div class="card-body ps-4 pe-4 pb-4">
+                            <p class="fs-4 fw-bold">EcoRoute Map Preview</p>
+                            <div id="map"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -42,5 +61,7 @@ include('Includes/php/dashboard/dashboardModule.php');
 
     <!-- JAVASCRIPT -->
     <?php include_once("Modules/footer.php"); ?>
+    <script type="text/javascript" src="Includes/js/dashboard/dashboard-js.js"></script>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDkOZ87G-Zi9aT5PMOoujlfuOY58YErCU&callback=initMap"></script>
 </body>
 </html>

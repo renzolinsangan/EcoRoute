@@ -50,15 +50,20 @@ $(document).ready(function() {
         $.ajax({
             url : 'loginValidation.php',
             type : 'POST',
+            dataType : 'json',
             data : {
                 userName : userName,
                 userPassword : userPassword,
             },
             success : function(data) {
                 console.log(data);
-                switch(data) {
+                switch(data.status) {
                     case 'loginsuccess':
-                        window.location.href = "dashboard.php";
+                        if(data.userRole == 0 || data.userRole == 1) {
+                            window.location.href = "dashboard.php";
+                        } else {
+                            window.location.href = "admin/dashboard.php";
+                        }
                         break;
                     case 'usernameempty':
                         showSweetAlert("Username Required!", "Please enter your username.", "warning", false, 1500, false);

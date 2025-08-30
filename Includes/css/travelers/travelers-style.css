@@ -21,36 +21,22 @@ body.swal2-shown {
     overflow: hidden;
 }
 
-.dashboard-text-container .col-12 .dashboard-text-container-card {
-    background-color: #FFFFFF !important;
-    box-shadow: 0 4px 12px rgba(10, 25, 49, 0.15) !important;
-}
-
-.dashboard-text-container .col-12 .dashboard-text-container-card .dashboard-text-title {
-    color: #011901 !important;
-}
-
-.dashboard-data-container .col-12 .dashboard-data-container-card {
-    background-color: #AFCAAF !important;
-    box-shadow: 0 4px 12px rgba(10, 25, 49, 0.15) !important;
-}
-
 .image-container {
     min-height: 40px;
-    height: 70px;
+    height: 60px;
     width: auto;
     border-radius: 50%; /* makes it circular */
     overflow: hidden;   /* hides corners outside circle */
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #FF9616;
+    background-color: #032F04;
     color: white;
 }
 
-#map {
-    height: 500px;
-    width: 100%;
+.travelers-text-container .col-12 .travelers-datacount-container-card {
+    background-color: #AFCAAF !important;
+    border: none;
 }
 
 hr {

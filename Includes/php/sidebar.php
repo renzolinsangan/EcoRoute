@@ -45,7 +45,7 @@
         </li>
         <li class="nav-item" id="logoutButton">
             <a href="#" class="nav-link <?php echo $settingsClass; ?>">
-                <i class="bi bi-gear-fill me-2"></i>&nbsp;Settings
+                <i class="bi bi-box-arrow-left me-2"></i>&nbsp;Logout
             </a>
         </li>
     </ul>

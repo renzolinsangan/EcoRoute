@@ -1,14 +1,21 @@
 <?php
 include('Modules/phpInclude.php');
 
+$encodedDataArray = [];
 $userNameInput = isset($_POST['userName']) ? $_POST['userName'] : '';
 $userPasswordInput = isset($_POST['userPassword']) ? $_POST['userPassword'] : '';
 
 // validation
 if(empty($userNameInput)) {
-    echo "usernameempty";
+    $encodedDataArray = [
+        'status' => 'usernameempty',
+        'userRole' => '',
+    ];
 } else if(empty($userPasswordInput)) {
-    echo "userpasswordempty";
+    $encodedDataArray = [
+        'status' => 'userpasswordempty',
+        'userRole' => '',
+    ];
 } else {
     $userDataArray = [];
 
@@ -29,16 +36,25 @@ if(empty($userNameInput)) {
             $_SESSION['userRole'] = $resultEcoRouteUsers->userRole;
             $_SESSION['active'] = "dashboard";
 
-            echo "loginsuccess";
-            exit();
+            $encodedDataArray = [
+                'status' => 'loginsuccess',
+                'userRole' => $resultEcoRouteUsers->userRole,
+            ];
         } else {
-            echo "invalidcredentials";
-            exit();
+            $encodedDataArray = [
+                'status' => 'invalidcredentials',
+                'userRole' => '',
+            ];
         }
     } else {
-        echo "invalidcredentials";
-        exit();
+        $encodedDataArray = [
+            'status' => 'invalidcredentials',
+            'userRole' => '',
+        ];
     }
 }
+
+echo json_encode($encodedDataArray);
+exit();
 // validation
 ?>
