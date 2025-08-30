@@ -10,6 +10,28 @@ function showSweetAlert(title, text, icon, confirmValidation, time, barPaddingVa
 }
 
 $(document).ready(function() {
+    // role checking
+    $('#userName').on("input", function() {
+        let userName = $(this).val();
+
+        $.ajax({
+            url : "Includes/php/roleChecking.php",
+            type : "POST",
+            dataType : "json",
+            data : {
+                userName : userName,
+            },
+            success : function(data) {
+                console.log(data.userRole);
+                if(data.status === 'success' && data.userRole == 0) {
+                    $('#userRole').val('Travelers');
+                } else if(data.status === 'success' & data.userRole == 1) {
+                    $('#userRole').val('Tourst Establishment');
+                }
+            },
+        });
+    });
+
     $('#togglePassword').click(function () {
         const passwordInput = $('#userPassword');
         const icon = $('#eyeIcon');
@@ -24,7 +46,6 @@ $(document).ready(function() {
         
         var userName = $('#userName').val().trim();
         var userPassword = $('#userPassword').val().trim();
-        var userRole = ($('#userRole').val() || "").trim();
 
         $.ajax({
             url : 'loginValidation.php',
@@ -32,7 +53,6 @@ $(document).ready(function() {
             data : {
                 userName : userName,
                 userPassword : userPassword,
-                userRole : userRole,
             },
             success : function(data) {
                 console.log(data);
@@ -45,9 +65,6 @@ $(document).ready(function() {
                         break;
                     case 'userpasswordempty':
                         showSweetAlert("Password Required!", "Please enter your password.", "warning", false, 1500, false);
-                        break;
-                    case 'userroleempty':
-                        showSweetAlert("User Role Required!", "Please select your user role.", "warning", false, 1500, false);
                         break;
                     case 'invalidcredentials':
                         showSweetAlert("Invalid Credentials!", "Check your user credentials, Please try again.", "warning", false, 1500, false);

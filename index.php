@@ -63,11 +63,12 @@ include('Modules/phpInclude.php');
                                     <span class="input-group-text">
                                         <i class="bi bi-person-badge-fill fs-5"></i>
                                     </span>
-                                    <select class="form-select p-2" name="userRole" id="userRole" form="loginValidationForm">
+                                    <input type="text" name="userRole" id="userRole" class="form-control" placeholder="User Role" readonly>
+                                    <!-- <select class="form-select p-2" name="userRole" id="userRole" form="loginValidationForm">
                                         <option disabled selected value>Select User Role</option>
                                         <option value="1">Admin</option>
                                         <option value="2">Tourist Spot / Establishment</option>
-                                    </select>
+                                    </select> -->
                                 </div>
                                 <p class="forgot-password-text text-end">Forgot Password</p>
                             </div>

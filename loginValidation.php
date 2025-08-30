@@ -3,27 +3,23 @@ include('Modules/phpInclude.php');
 
 $userNameInput = isset($_POST['userName']) ? $_POST['userName'] : '';
 $userPasswordInput = isset($_POST['userPassword']) ? $_POST['userPassword'] : '';
-$userRoleSelect = isset($_POST['userRole']) ? $_POST['userRole'] : '';
 
 // validation
 if(empty($userNameInput)) {
     echo "usernameempty";
 } else if(empty($userPasswordInput)) {
     echo "userpasswordempty";
-} else if(empty($userRoleSelect)) {
-    echo "userroleempty";
 } else {
     $userDataArray = [];
 
-    $sql = "SELECT userId, userName, userPassword, userEmail, firstName, lastName, userRole FROM ecoroute_users WHERE userName LIKE '$userNameInput' OR userEmail LIKE '$userNameInput' AND userRole = $userRoleSelect";
+    $sql = "SELECT userId, userName, userPassword, userEmail, firstName, lastName, userRole FROM ecoroute_users WHERE userName LIKE '$userNameInput' OR userEmail LIKE '$userNameInput'";
     $queryEcoRouteUsers = $db->query($sql);
 
     if($queryEcoRouteUsers && $queryEcoRouteUsers->num_rows > 0) {
         $resultEcoRouteUsers = $queryEcoRouteUsers->fetch_object();
         $userPassword = $resultEcoRouteUsers->userPassword;
-        $userRole = $resultEcoRouteUsers->userRole;
 
-        if($userPasswordInput == $userPassword && $userRoleSelect == $userRole) {
+        if($userPasswordInput == $userPassword) {
             $_SESSION['userId'] = $resultEcoRouteUsers->userId;
             $_SESSION['userName'] = $resultEcoRouteUsers->userName;
             $_SESSION['userPassword'] = $resultEcoRouteUsers->userPassword;

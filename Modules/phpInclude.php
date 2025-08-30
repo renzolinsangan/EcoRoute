@@ -13,6 +13,14 @@ $touristspotPath = $serverPath . "redirect.php?active=touristspot";
 $sustainabilityPath = $serverPath . "redirect.php?active=sustainability";
 $mobileAppPath = $serverPath . "redirect.php?active=mobileapp";
 
+$dashboardClass = "";
+$travelersClass = "";
+$touristspotClass = "";
+$sustainabilityClass = "";
+$mobileAppClass = "";
+$adminProfileClass = "";
+$settingsClass = "";
+
 $sessionActive = !empty($_SESSION['active']) ? $_SESSION['active'] : '';
 $getActive  = (!empty($GET['active'])) ? $_GET['active'] : $sessionActive;
 
