@@ -31,7 +31,8 @@ body.swal2-shown {
 }
 
 .dashboard-data-container .col-12 .dashboard-data-container-card {
-    background-color: #AFCAAF !important;
+    background-color: #D9E7D1 !important;
+    border: none !important;
     box-shadow: 0 4px 12px rgba(10, 25, 49, 0.15) !important;
 }
 

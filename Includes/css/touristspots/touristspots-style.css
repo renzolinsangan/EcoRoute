@@ -34,16 +34,16 @@ body.swal2-shown {
     color: white;
 }
 
-.travelers-text-container .col-12 .travelers-datacount-container-card {
+.touristspots-text-container .col-12 .touristspots-datacount-container-card {
     background-color: #D9E7D1 !important;
     border: none;
 }
 
-.travelers-text-container .col-12 .travelers-text-title {
+.touristspots-text-container .col-12 .touristspots-text-title {
     color: #044F06;
 }
 
-.travelers-text-container .col-12 .travelers-text-title-extension {
+.touristspots-text-container .col-12 .touristspots-text-title-extension {
     color: #011901;
 }
 
@@ -51,23 +51,23 @@ hr {
     border: 1px solid black !important;
 }
 
-.travelers-table-container .travelers-action-container .travelers-action-container-card {
+.touristspots-table-container .touristspots-action-container .touristspots-action-container-card {
     height: 100%;
     background-color: #D9E7D1 !important;
 }
 
-.travelers-table-container .travelers-action-container .travelers-action-container-card .card-header {
+.touristspots-table-container .touristspots-action-container .touristspots-action-container-card .card-header {
     border-bottom: 3px solid #032F04;
 }
 
-.travelers-table-container .travelers-action-container .travelers-action-container-card .card-body .verify-user-btn,
-.travelers-table-container .travelers-action-container .travelers-action-container-card .card-body .reset-password-btn, 
-.travelers-table-container .travelers-action-container .travelers-action-container-card .card-body .edit-btn {
+.touristspots-table-container .touristspots-action-container .touristspots-action-container-card .card-body .verify-user-btn,
+.touristspots-table-container .touristspots-action-container .touristspots-action-container-card .card-body .reset-password-btn, 
+.touristspots-table-container .touristspots-action-container .touristspots-action-container-card .card-body .edit-btn {
     background-color: #FF9616;
     color: #FFFFFF;
 }
 
-.travelers-table-container .travelers-action-container .travelers-action-container-card .card-body .delete-user-btn {
+.touristspots-table-container .touristspots-action-container .touristspots-action-container-card .card-body .delete-user-btn {
     background-color: #FF5416;
     color: #FFFFFF;
 }
