@@ -83,7 +83,7 @@ include('Includes/php/touristspots/touristspotsModule.php');
                                     <button class="reset-password-btn btn w-100">Reset Password</button>
                                 </div>
                                 <div class="col-4 col-sm-10 col-md-10 text-center mb-2">
-                                    <button class="edit-btn btn w-100">Edit List</button>
+                                    <button class="edit-btn btn w-100">Edit Information</button>
                                 </div>
                                 <div class="col-4 col-sm-10 col-md-10 text-center mb-2">
                                     <button class="delete-user-btn btn w-100">Delete User</button>
