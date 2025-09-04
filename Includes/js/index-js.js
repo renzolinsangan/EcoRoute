@@ -81,39 +81,4 @@ $(document).ready(function() {
             }
         })
     });
-
-    // $('#signUpButton').click(function() {
-    //     $('#modal-izi-signUpForm').iziModal({
-    //         title                 : '<h5>Signup Now!</h5>',
-    //         headerColor           : '#FF9616',
-    //         fullScreen            : false,
-    //         transitionIn          : 'comingIn',
-    //         transitionOut         : 'comingOut',
-    //         radius                : 0,
-    //         top                   : 100,
-    //         restoreDefaultContent : true,
-    //         closeOnEscape         : true,
-    //         closeButton           : true,
-    //         overlayClose          : false,
-    //         draggable             : false,
-    //         onOpening : function(modal) 
-    //         {
-    //             modal.startLoading();
-    //             $.ajax({
-    //                 url  : 'signup.php', 
-    //                 type : 'POST',
-    //                 data : {
-    //                 },
-    //                 success : function(data) {
-    //                     $(".izimodal-content-signUpForm").html(data);
-    //                     modal.stopLoading();
-    //                 },
-    //             });
-    //         },
-    //         onClosed: function(modal) {
-    //             $("#modal-izi-signUpForm").iziModal("destroy");
-    //         }
-    //     });
-    //     $("#modal-izi-signUpForm").iziModal("open");
-    // });
 })

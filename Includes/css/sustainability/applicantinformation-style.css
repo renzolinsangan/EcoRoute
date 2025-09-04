@@ -75,7 +75,7 @@ hr {
 }
 
 .applicant-assessment-container .applicant-assessment-container-data .assessment-title-text {
-    color :#011901;
+    color:#011901;
 }
 
 .applicant-assessment-container .applicant-assessment-container-data .assessment-title-card {
@@ -99,6 +99,11 @@ hr {
 .applicant-assessment-container .applicant-assessment-container-data .assessment-title-card .assessment-title-card-row .asessment-title-card-col-right .card .card-body {
     overflow-y: auto !important;
     overflow-x: hidden !important;
+}
+
+#ratingGuide, #environmentalManagement {
+    cursor: pointer;
+    color: #044F06;
 }
 
 /* Mobile (≤576px, Bootstrap sm breakpoint) */

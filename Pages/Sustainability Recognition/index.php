@@ -101,7 +101,7 @@ include('Includes/php/sustainability/sustainabilityModule.php');
             <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<< SECTION FOR EVALUATED LIST <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
 
             <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<< SECTION FOR APPLICATION LIST <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
-            <div id="applicationListContainer" class="sustainability-application-container row ps-sm-4 ps-md-4 mb-0 mb-sm-4 mb-md-4 d-none">
+            <div id="applicationListContainer" class="sustainability-application-container row ps-sm-4 ps-md-4 mb-0 mb-sm-2 mb-md-2 d-none">
                 <p class="fw-bold">Sustainability Recognition Applicants</p>
                 <div class="col-12 col-sm-3 col-md-3 mb-4">
                     <div class="input-group">
