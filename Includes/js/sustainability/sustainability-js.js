@@ -13,6 +13,14 @@ $('#applicationListBtn').on('click', function(e) {
     $('#evaluatedListBtn').removeClass('active');
 });
 
+$('#applicationBtnRedirect').on('click', function(e) {
+    window.location.href = "applicantInformation";
+})
+
+$('#arrowReturnToPage').on('click', function(e) {
+    window.location.href = "index";
+})
+
 // FOR STAR RATING
 let selectedRating = 0;
 
@@ -53,6 +61,18 @@ $('#starRating i').each(function (index) {
     }
 });
 }
+
+$(document).ready(function () {
+    // Select the left and right cards
+    const $leftCard = $('.assessment-title-card-col-left .card');
+    const $rightCard = $('.asessment-title-card-col-right .card');
+
+    // Get height of the left card
+    const leftHeight = $leftCard.outerHeight();
+
+    // Apply it to the right card
+    $rightCard.height(leftHeight);
+});
 
 // $(document).ready(function() {
 //     $('#sustainabilityTable').DataTable({

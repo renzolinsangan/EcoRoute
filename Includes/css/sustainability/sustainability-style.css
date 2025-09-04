@@ -51,15 +51,15 @@ hr {
     border: 1px solid black !important;
 }
 
-.sustainability-button-container .col-4 .evaluated-list-btn.active,
-.sustainability-button-container .col-4 .application-list-btn.active {
+.sustainability-button-container .col-12 .evaluated-list-btn.active,
+.sustainability-button-container .col-12 .application-list-btn.active {
     background-color: #044F06;
     color: white;
     border: none;
 }
 
-.sustainability-button-container .col-4 .evaluated-list-btn,
-.sustainability-button-container .col-4 .application-list-btn {
+.sustainability-button-container .col-12 .evaluated-list-btn,
+.sustainability-button-container .col-12 .application-list-btn {
     border: 2px solid #044F06;
     color: #044F06;
 }
@@ -84,18 +84,18 @@ hr {
     color: #FFFFFF;
 }
 
-.sustainability-application-container .col-3 .input-group .input-group-text {
+.sustainability-application-container .col-12 .input-group .input-group-text {
     border: none;
     background-color: #D9E7D1;
     color: #044F06;
 }
 
-.sustainability-application-container .col-3 .input-group .application-search-input {
+.sustainability-application-container .col-12 .input-group .application-search-input {
     background-color: #D9E7D1 !important;
     color: #044F06 !important;
 }
 
-.sustainability-application-container .col-3 .input-group .application-search-input:focus {
+.sustainability-application-container .col-12 .input-group .application-search-input:focus {
   box-shadow: 0 0 8px #044F06;
   outline: none;
   border-color: #044F06; /* optional */
@@ -116,7 +116,24 @@ hr {
     border-bottom-right-radius: 15px;
 }
 
-.sustainability-application-container .sustainability-application-container-data .sustainability-application-container-data-row .col-3 .view-application-btn {
+.sustainability-application-container .sustainability-application-container-data .sustainability-application-container-data-row .col-12 .view-application-btn {
     background-color: #FF9616;
     color: #FFFFFF;
+}
+
+/* Mobile (≤576px, Bootstrap sm breakpoint) */
+@media (max-width: 576px) {
+    .sustainability-application-container .sustainability-application-container-image {
+        margin-top: -20px !important;
+        border-radius: 0 !important;
+        border-top-left-radius: 15px !important;
+        border-top-right-radius: 15px !important;
+    }
+
+    .sustainability-application-container .sustainability-application-container-data {
+        margin-top: -20px !important;
+        border-radius: 0 !important;
+        border-bottom-right-radius: 15px !important;
+        border-bottom-left-radius: 15px !important;
+    }
 }

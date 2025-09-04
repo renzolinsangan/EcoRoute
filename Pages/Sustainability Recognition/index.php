@@ -11,7 +11,7 @@ include('Includes/php/sustainability/sustainabilityModule.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EcoRoute</title>
     <link rel="stylesheet" href="../../Includes/css/sustainability/sustainability-style.css">
-    <link rel="stylesheet" href="../../Includes/css/table-styles.css">
+    <link rel="stylesheet" href="../../Includes/css/table-style.css">
     <?php include_once("Modules/header.php"); ?>
 </head>
 <body>
@@ -54,7 +54,7 @@ include('Includes/php/sustainability/sustainabilityModule.php');
             </div>
             <hr class="mb-4"> <!-- HORIZONTAL LINE -->
             <div class="sustainability-button-container row d-flex ps-sm-4 ps-md-4 mb-4">
-                <div class="col-4 col-sm-4 col-md-4">
+                <div class="col-12 col-sm-4 col-md-4">
                     <button type="button" id="evaluatedListBtn" class="evaluated-list-btn btn me-2 ps-4 pe-4 active">Evaluated List</button>
                     <button type="button" id="applicationListBtn" class="application-list-btn btn ps-4 pe-4">Application List</button>
                 </div>
@@ -63,7 +63,7 @@ include('Includes/php/sustainability/sustainabilityModule.php');
             <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<< SECTION FOR EVALUATED LIST <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
             <div id="evaluatedListContainer" class="sustainability-table-container row ps-sm-4 ps-md-4 mb-4">
                 <p class="fw-bold">Sustainability Recognition List</p>
-                <div class="col-12 col-sm-9 col-md-9" id="travelersTableContainer">
+                <div class="col-12 col-sm-9 col-md-9 mb-3" id="travelersTableContainer">
                     <table id="sustainabilityTable" class="table table-row-border table-hover dataTable">
                         <thead>
                             <tr>
@@ -101,37 +101,41 @@ include('Includes/php/sustainability/sustainabilityModule.php');
             <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<< SECTION FOR EVALUATED LIST <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
 
             <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<< SECTION FOR APPLICATION LIST <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
-            <div id="applicationListContainer" class="sustainability-application-container row ps-sm-4 ps-md-4 mb-4 d-none">
+            <div id="applicationListContainer" class="sustainability-application-container row ps-sm-4 ps-md-4 mb-0 mb-sm-4 mb-md-4 d-none">
                 <p class="fw-bold">Sustainability Recognition Applicants</p>
-                <div class="col-3 col-sm-3 col-md-3 mb-4">
+                <div class="col-12 col-sm-3 col-md-3 mb-4">
                     <div class="input-group">
                         <span class="input-group-text"><i class="bi bi-search fs-5"></i></span>
                         <input type="text" class="application-search-input form-control p-2" placeholder="Search">
                     </div>
                 </div>
-                <div class="col-9 col-sm-9 col-md-9 mb-4"></div> <!-- FOR FILTER IF WANT -->
-                <div class="sustainability-application-container-image col-12 col-sm-3 col-md-3 mb-4"></div>
-                <div class="sustainability-application-container-data col-12 col-sm-9 col-md-9 mb-4">
+                <div class="col-12 col-sm-9 col-md-9 mb-4"></div> <!-- FOR FILTER IF WANT -->
+                <div class="sustainability-application-container-image col-12 col-sm-3 col-md-3 mb-4 h-350 h-sm-100 h-md-100">
+                    <br class="d-block d-sm-none d-md-none"><br class="d-block d-sm-none d-md-none"><br class="d-block d-sm-none d-md-none">
+                    <br class="d-block d-sm-none d-md-none"><br class="d-block d-sm-none d-md-none"><br class="d-block d-sm-none d-md-none">
+                    <br><br><br>
+                </div>
+                <div class="sustainability-application-container-data col-12 col-sm-9 col-md-9 mb-0 mb-sm-4 mb-md-4">
                     <div class="sustainability-application-container-data-row row">
                         <!-- <<<<<<<<<<<<<<<<<< HIGHER SECTION <<<<<<<<<<<<<<<<<< -->
-                        <div class="col-4 col-sm-4 col-md-4 mt-2 ps-4 d-block">
+                        <div class="col-12 col-sm-3 col-md-3 mt-2 ps-4 d-block">
                             <p class="fw-bold fs-4 mb-0">Minor Basilica of Saint Martin of Tours</p>
                             <p class="fs-5" style="color: #011901;">Taal Town Proper</p>
                         </div>
-                        <div class="col-3"></div> <!-- divider -->
-                        <div class="col-5 col-sm-5 col-md-5 mt-4 d-flex justify-content-end p-0 pe-sm-5 pe-md-5">
+                        <div class="col-sm-4 col-md-4 d-none d-sm-block d-md-block"></div> <!-- divider -->
+                        <div class="col-12 col-sm-5 col-md-5 mt-4 d-flex justify-content-start justify-content-sm-end justify-content-md-end ps-4 pe-sm-5 pe-md-5">
                             <p>Submitted: 04-22-2025</p>
                         </div>
                         <!-- <<<<<<<<<<<<<<<<<< HIGHER SECTION <<<<<<<<<<<<<<<<<< -->
                          
                         <!-- <<<<<<<<<<<<<<<<<< LOWER SECTION <<<<<<<<<<<<<<<<<< -->
-                        <div class="col-3 col-sm-3 col-md-3 ps-4 mb-3">
+                        <div class="col-12 col-sm-3 col-md-3 ps-4 mb-0 mb-sm-4 mb-md-4">
                             <!-- Star Rating -->
                             <div id="starRating" class="d-flex gap-2 mt-2"></div>
                         </div>
-                        <div class="col-6"></div> <!-- divider -->
-                        <div class="col-3 col-sm-3 col-md-3 d-flex justify-content-center align-items-center">
-                            <button class="view-application-btn btn">View Application</button>
+                        <div class="col-sm-6 col-md-6 mb-4"></div> <!-- divider -->
+                        <div class="col-12 col-sm-3 col-md-3 mb-4 d-flex justify-content-end justify-content-sm-center justify-content-md-center align-items-sm-center align-items-md-center">
+                            <button type="button" id="applicationBtnRedirect" class="view-application-btn btn ms-0 ms-sm-4 ms-md-4">View Application</button>
                         </div>
                         <!-- <<<<<<<<<<<<<<<<<< LOWER SECTION <<<<<<<<<<<<<<<<<< -->
                     </div>
@@ -143,7 +147,7 @@ include('Includes/php/sustainability/sustainabilityModule.php');
 
     <!-- JAVASCRIPT -->
     <?php include_once("Modules/footer.php"); ?>
-    <script>var sqlData = "<?php echo addslashes($sqlData); ?>"; </script>
+    <!-- <script>var sqlData = "<?php echo addslashes($sqlData); ?>"; </script> -->
     <script type="text/javascript" src="../../Includes/js/sustainability/sustainability-js.js"></script>
 </body>
 </html>

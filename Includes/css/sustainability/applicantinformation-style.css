@@ -1,0 +1,110 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow-anchor: none;
+}
+
+body {
+    background-color: #F5F7FF !important;
+    display: flex;
+    flex-direction: column;
+}
+
+body.swal2-shown {
+    padding-right: 0 !important;
+}
+
+.main-content-wrapper {
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+}
+
+.image-container {
+    min-height: 40px;
+    height: 60px;
+    width: auto;
+    border-radius: 50%; /* makes it circular */
+    overflow: hidden;   /* hides corners outside circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #032F04;
+    color: white;
+}
+
+.sustainability-text-container .col-12 .sustainability-datacount-container-card {
+    background-color: #D9E7D1 !important;
+    border: none;
+}
+
+.sustainability-text-container .col-12 .sustainability-text-title {
+    color: #044F06;
+}
+
+.sustainability-text-container .col-12 .sustainability-text-title-extension {
+    color: #011901;
+}
+
+hr {
+    border: 1px solid black !important;
+}
+
+#arrowReturnToPage {
+    cursor: pointer;
+    color: #044F06;
+}
+
+#textInfo {
+    color: #044F06;
+    font-weight: 500;
+}
+
+.applicant-data-container input {
+    background-color: #D9E7D1 !important;
+    color: #044F06 !important;
+    font-weight: bold;
+    border: 2px solid #044F06;
+}
+
+.applicant-data-container input:focus {
+  box-shadow: 0 0 8px #044F06;
+  outline: none;
+  border-color: #044F06; /* optional */
+}
+
+.applicant-assessment-container .applicant-assessment-container-data .assessment-title-text {
+    color :#011901;
+}
+
+.applicant-assessment-container .applicant-assessment-container-data .assessment-title-card {
+    border: 2px solid #044F06;
+    background-color: #D9E7D1;
+}
+
+.applicant-assessment-container .applicant-assessment-container-data .assessment-title-card .assessment-title-card-row .assessment-title-card-col-left .card {
+    background-color: #A8C9A8;
+}
+
+.applicant-assessment-container .applicant-assessment-container-data .assessment-title-card .assessment-title-card-row .assessment-title-card-col-left .card .card-body .icon-container i {
+    font-size: 100px !important;
+}
+
+.applicant-assessment-container .applicant-assessment-container-data .assessment-title-card .assessment-title-card-row .assessment-title-card-col-left .card .card-body .button-container .view-proof-btn {
+    background-color: #FF9616;
+    color: white;
+}
+
+.applicant-assessment-container .applicant-assessment-container-data .assessment-title-card .assessment-title-card-row .asessment-title-card-col-right .card .card-body {
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+}
+
+/* Mobile (≤576px, Bootstrap sm breakpoint) */
+@media (max-width: 576px) {
+    .applicant-assessment-container .applicant-assessment-container-data .assessment-title-card .assessment-title-card-row .assessment-title-card-col-left .card .card-body .icon-container i {
+        font-size: var(--bs-body-font-size); /* or Bootstrap’s fs-1 */
+        font-size: 2.5rem !important; /* fs-1 = 2.5rem by default */
+    }
+}
