@@ -59,7 +59,7 @@ include('Includes/php/sustainability/sustainabilityModule.php');
             <h3 id="textInfo">Rating Assessment&nbsp;<span><i class="bi bi-info-circle fs-3" id="ratingGuide"></i></span></h3>
             <div class="applicant-assessment-container row mt-4">
                 <div class="applicant-assessment-container-data col-12">
-                    <h4 class="asessment-title-text">1. Environmental Management&nbsp;<span><i class="bi bi-info-circle fs-3" id="environmentalManagement"></i></span></h4>
+                    <h4 class="assessment-title-text">1. Environmental Management&nbsp;<span><i class="bi bi-info-circle fs-3" id="environmentalManagement"></i></span></h4>
                     <div class="assessment-title-card card">
                         <div class="assessment-title-card-row p-3 row">
                             <div class="assessment-title-card-col-left col-5 col-sm-5 col-md-5">

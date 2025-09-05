@@ -61,6 +61,10 @@ hr {
     font-weight: 500;
 }
 
+.bi.bi-info-circle {
+    color: red !important;
+}
+
 .applicant-data-container input {
     background-color: #D9E7D1 !important;
     color: #044F06 !important;

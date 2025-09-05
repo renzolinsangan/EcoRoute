@@ -38,11 +38,11 @@
 
     <!-- Bottom section -->
     <ul class="nav nav-pills flex-column mt-auto pt-3 border-top">
-        <li class="nav-item">
+        <!-- <li class="nav-item">
             <a href="#" class="nav-link <?php echo $adminProfileClass; ?>">
                 <i class="bi bi-person-circle me-2"></i>&nbsp;Admin Profile
             </a>
-        </li>
+        </li> -->
         <li class="nav-item" id="logoutButton">
             <a href="#" class="nav-link <?php echo $settingsClass; ?>">
                 <i class="bi bi-box-arrow-left me-2"></i>&nbsp;Logout

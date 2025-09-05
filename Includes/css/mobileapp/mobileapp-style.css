@@ -1,0 +1,91 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow-anchor: none;
+}
+
+body {
+    background-color: #F5F7FF !important;
+    display: flex;
+    flex-direction: column;
+}
+
+body.swal2-shown {
+    padding-right: 0 !important;
+}
+
+.main-content-wrapper {
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+}
+
+.image-container {
+    min-height: 40px;
+    height: 60px;
+    width: auto;
+    border-radius: 50%; /* makes it circular */
+    overflow: hidden;   /* hides corners outside circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #032F04;
+    color: white;
+}
+
+.mobileapp-text-container .col-12 .mobileapp-datacount-container-card {
+    background-color: #D9E7D1 !important;
+    border: none;
+}
+
+.mobileapp-text-container .col-12 .mobileapp-text-title {
+    color: #044F06;
+}
+
+.mobileapp-text-container .col-12 .mobileapp-text-title-extension {
+    color: #011901;
+}
+
+hr {
+    border: 1px solid black !important;
+}
+
+.mobileapp-button-container .col-12 .evaluated-list-btn.active,
+.mobileapp-button-container .col-12 .application-list-btn.active {
+    background-color: #044F06;
+    color: white;
+    border: none;
+}
+
+.mobileapp-button-container .col-12 .evaluated-list-btn,
+.mobileapp-button-container .col-12 .application-list-btn {
+    border: 2px solid #044F06;
+    color: #044F06;
+}
+
+.mobileapp-ecoroutemap-application-container .col-12 .input-group .input-group-text {
+    border: none;
+    background-color: #D9E7D1;
+    color: #044F06;
+}
+
+.mobileapp-ecoroutemap-application-container .col-12 .input-group .application-search-input {
+    background-color: #D9E7D1 !important;
+    color: #044F06 !important;
+}
+
+.mobileapp-ecoroutemap-application-container .col-12 .input-group .application-search-input:focus {
+  box-shadow: 0 0 8px #044F06;
+  outline: none;
+  border-color: #044F06; /* optional */
+}
+
+.sendnotification-application-container .sendnotification-application-container-send h2 {
+    color: #044F06;
+}
+
+#map {
+    height: 500px;
+    width: 100%;
+}
