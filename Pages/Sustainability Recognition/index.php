@@ -40,7 +40,7 @@ include('Includes/php/sustainability/sustainabilityModule.php');
                         <div class="card-body d-flex justify-content-center align-items-center">
                             <div class="col-2 col-sm-2 col-md-2">
                                 <div class="image-container ps-sm-4 ps-md-4 ps-md-4 pe-md-4">
-                                    <i class="bi bi-tree text-center fs-2"></i>
+                                    <i class="bi bi-leaf text-center fs-2"></i>
                                 </div>
                             </div>
                             <div class="col-1 col-sm-1 col-md-1"></div>

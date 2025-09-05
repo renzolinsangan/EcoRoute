@@ -26,7 +26,7 @@
         </li>
         <li class="nav-item mb-3">
             <a href="<?php echo $sustainabilityPath; ?>" class="nav-link <?php echo $sustainabilityClass; ?>">
-                <i class="bi bi-tree me-2"></i>&nbsp;Sustainability Recognition
+                <i class="bi bi-leaf me-2"></i>&nbsp;Sustainability Recognition
             </a>
         </li>
         <li class="nav-item mb-3">

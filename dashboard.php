@@ -41,7 +41,7 @@ include('Includes/php/dashboard/dashboardModule.php');
             <div class="dashboard-data-container row">
                 <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<< DATA CARDS <<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
                 <?php echo cardBuilder('bi bi-people', 'Travelers in EcoRoute', '50'); ?>
-                <?php echo cardBuilder('bi bi-tree', 'Tourist Spots & Establishments in EcoRoute', '30'); ?>
+                <?php echo cardBuilder('bi bi-leaf', 'Tourist Spots & Establishments in EcoRoute', '30'); ?>
                 <?php echo cardBuilder('bi bi-buildings', 'Sustainability Recognized', '30'); ?>
                 <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<< DATA CARDS <<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
             </div>

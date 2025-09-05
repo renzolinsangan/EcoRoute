@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EcoRoute - Rating Guide</title>
     <style>
-        .bi.bi-tree, .bi.bi-tree-fill, .bi.bi-check-square-fill {
+        .bi.bi-leaf, .bi.bi-leaf-fill, .bi.bi-check-square-fill {
             color: #20AB38;
         }
 
-        .main-card, .tree-card {
+        .main-card, .leaf-card {
             border: 2px solid #011901;
         }
 
@@ -57,11 +57,11 @@
                     <i class="bi bi-check-square-fill fs-1"></i>
                     <span class="fs-sm-4 fs-md-4 ms-1 ms-sm-3 ms-md-3 fw-bold">1 Check</span>
                     <span class="fs-sm-3 fs-md-3 ms-1 ms-sm-4 ms-md-4 fw-bold">=</span>
-                    <div class="tree-card card ms-1 ms-sm-4 ms-md-4 pt-1 pb-1 ps-2 pe-2">
-                        <i class="bi bi-tree-fill fs-3"></i>
+                    <div class="leaf-card card ms-1 ms-sm-4 ms-md-4 pt-1 pb-1 ps-2 pe-2">
+                        <i class="bi bi-leaf-fill fs-3"></i>
                     </div>
-                    <div class="tree-container-data d-block pt-3">
-                        <p class="mb-0 ms-1 ms-sm-2 ms-md-2 fw-bold">1 Tree</p>
+                    <div class="leaf-container-data d-block pt-3">
+                        <p class="mb-0 ms-1 ms-sm-2 ms-md-2 fw-bold">1 Leaf</p>
                         <p class="ms-1 ms-sm-2 ms-md-2 fw-medium">(Level 1 Sustainability Badge)</p>
                     </div>
                 </div>
@@ -82,10 +82,10 @@
                             </div>
                             <div class="col-8 pt-1 ps-0 d-block">
                                 <p class="fw-bold mb-0">Level <?php echo $level; ?></p>
-                                <div class="tree-container d-flex align-items-center">
+                                <div class="leaf-container d-flex align-items-center">
                                     <p class="fw-medium me-1 mb-0"><?php echo $level; ?></p>
                                     <?php for ($i = 0; $i < 5; $i++) : ?>
-                                        <i class="bi <?php echo ($i <= $level ? 'bi-tree-fill' : 'bi-tree'); ?>"></i>
+                                        <i class="bi <?php echo ($i <= $level -1 ? 'bi-leaf-fill' : 'bi-leaf'); ?>"></i>
                                     <?php endfor; ?>
                                 </div>
                             </div>
